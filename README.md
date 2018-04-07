@@ -35,16 +35,17 @@ sudo apt-get install cmake
 ```
 sudo apt-get install libboost-all-dev
 ```
-git clone https://github.com/cadexdev/cadex.git
-```
-*Pthreads
+
+* Pthreads
 ```
 sudo apt-get install libpthread-stubs0-dev
 ```
 
 
 Create build directory inside cadex, go there and run CMake and Make:
+
 ```
+git clone https://github.com/cadexdev/cadex.git
 mkdir cadex/build
 cd cadex/build
 cadex/build/$ cmake..
@@ -55,13 +56,16 @@ Check built Cadex by:
 ```
 cadex/build/$ cd src
 ```
-Run Cadexd and let it sync with the Cadex Network
+
+*Run Cadexd and let it sync with the Cadex Network
 ```
 cadex/build/src/$ sudo ./cadexd
 ```
+
 Run simplewallet Once Sync is done
 ```
 cadex/build/src/$ sudo ./simplewallet
 ```
+
 You will be asked to Open[O] wallet or Generate[G] wallet, put "O" to open already generated wallet or "G" to open new wallet.
 ```
